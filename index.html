@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HR STORE — groceries, beverages, personal care, cleaning products, snacks, and home essentials.">
+  <title>HR STORE | Everyday Essentials</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+
+  <div class="announcement">
+    <span>HR STORE</span> &nbsp; | &nbsp; Everyday essentials, all in one place
+  </div>
+
+  <header class="header" id="header">
+    <a class="logo" href="#home" aria-label="HR Store home">
+      <span class="logo-mark">HR</span>
+      <span>HR <strong>STORE</strong><small>EVERYDAY ESSENTIALS</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#categories">Products</a>
+      <a href="#services">Services</a>
+      <a href="#facilities">Parking & Security</a>
+      <a href="#about">About</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact" class="nav-contact">Contact ↗</a>
+    </nav>
+
+    <button class="cart-button" id="cartButton" aria-label="Open shopping cart">
+      🛒 <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <!-- 1. HOME -->
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <span class="eyebrow"><span class="live-dot"></span> YOUR EVERYDAY STORE</span>
+        <h1>EVERYDAY NEEDS.<br> <span>ONE SMART</span><br>DESTINATION.</h1>
+        <p>From pantry essentials to personal care and home supplies, HR STORE makes everyday shopping simple, convenient, and easy to explore.</p>
+        <div class="hero-actions">
+          <a href="#categories" class="btn btn-primary">EXPLORE PRODUCTS ↗</a>
+          <a href="#about" class="btn btn-outline">DISCOVER HR STORE</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>06</strong><span>Product departments</span></div>
+          <div><strong>01</strong><span>Convenient destination</span></div>
+          <div><strong>100%</strong><span>Everyday essentials focus</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-glow"></div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1000&q=85" alt="Fresh produce in a grocery store">
+        </div>
+        <div class="floating-card floating-one">
+          <span class="float-icon">✦</span>
+          <div><strong>Everyday Value</strong><small>Essentials for your home</small></div>
+        </div>
+        <div class="floating-card floating-two">
+          <span class="float-icon">✓</span>
+          <div><strong>Easy Shopping</strong><small>Explore products by category</small></div>
+        </div>
+        <div class="hero-decoration">HR<span>.</span></div>
+      </div>
+      <a class="scroll-cue" href="#categories">SCROLL TO EXPLORE ↓</a>
+    </section>
+
+    <!-- 2. SIX PRODUCT CATEGORIES -->
+    <section class="section categories-section" id="categories">
+      <div class="section-heading reveal">
+        <span class="eyebrow">EXPLORE OUR STORE</span>
+        <h2>YOUR ESSENTIALS.<br><span>OUR SIX DEPARTMENTS.</span></h2>
+        <p>Discover everyday products for your kitchen, personal care routine, and home.</p>
+      </div>
+
+      <div class="category-grid">
+        <a class="category-card reveal" href="#products" data-category-link="groceries">
+          <span class="category-number">01 / DEPARTMENT</span><div class="category-icon">🥦</div>
+          <h3>Groceries & Produce</h3><p>Rice, grains, cooking oil, and everyday pantry goods.</p><span class="category-link">EXPLORE ↗</span>
+        </a>
+        <a class="category-card reveal" href="#products" data-category-link="beverages">
+          <span class="category-number">02 / DEPARTMENT</span><div class="category-icon">🥤</div>
+          <h3>Beverages</h3><p>Tea, coffee, juices, water, and refreshing drinks.</p><span class="category-link">EXPLORE ↗</span>
+        </a>
+        <a class="category-card reveal" href="#products" data-category-link="personal">
+          <span class="category-number">03 / DEPARTMENT</span><div class="category-icon">🧴</div>
+          <h3>Personal Care</h3><p>Soap, shampoo, hygiene products, and body care.</p><span class="category-link">EXPLORE ↗</span>
+        </a>
+        <a class="category-card reveal" href="#products" data-category-link="cleaning">
+          <span class="category-number">04 / DEPARTMENT</span><div class="category-icon">🧹</div>
+          <h3>Cleaning Supplies</h3><p>Detergents, dishwashing liquid, and home cleaners.</p><span class="category-link">EXPLORE ↗</span>
+        </a>
+        <a class="category-card reveal" href="#products" data-category-link="snacks">
+          <span class="category-number">05 / DEPARTMENT</span><div class="category-icon">🍪</div>
+          <h3>Snacks & Treats</h3><p>Biscuits, chips, sweets, and quick bites.</p><span class="category-link">EXPLORE ↗</span>
+        </a>
+        <a class="category-card reveal" href="#products" data-category-link="home">
+          <span class="category-number">06 / DEPARTMENT</span><div class="category-icon">🏠</div>
+          <h3>Home Essentials</h3><p>Paper goods, storage items, and useful home products.</p><span class="category-link">EXPLORE ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section products-section" id="products">
+      <div class="section-heading reveal">
+        <span class="eyebrow">THE HR STORE COLLECTION</span>
+        <h2>SHOP DAILY GOODS.<br><span>KEEP LIFE SIMPLE.</span></h2>
+        <p>Search products, browse departments, and add items to your sample shopping cart.</p>
+      </div>
+
+      <div class="product-toolbar reveal">
+        <div class="filters" id="filters">
+          <button class="filter-btn active" data-filter="all">All Products</button>
+          <button class="filter-btn" data-filter="groceries">Groceries</button>
+          <button class="filter-btn" data-filter="beverages">Beverages</button>
+          <button class="filter-btn" data-filter="personal">Personal Care</button>
+          <button class="filter-btn" data-filter="cleaning">Cleaning</button>
+          <button class="filter-btn" data-filter="snacks">Snacks</button>
+          <button class="filter-btn" data-filter="home">Home Goods</button>
+        </div>
+        <input class="search-input" id="productSearch" type="search" placeholder="Search daily goods..." aria-label="Search products">
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <article class="product-card reveal" data-category="groceries" data-name="basmati rice">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80" alt="Rice grains" loading="lazy"><span>GROCERIES</span></div>
+          <div class="product-info"><h3>Basmati Rice</h3><p>Pantry staple</p><div class="product-bottom"><strong>Rs. 450</strong><button class="add-btn" data-product="Basmati Rice" data-price="450" aria-label="Add Basmati Rice">+</button></div></div>
+        </article>
+        <article class="product-card reveal" data-category="groceries" data-name="cooking oil">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80" alt="Cooking oil" loading="lazy"><span>GROCERIES</span></div>
+          <div class="product-info"><h3>Cooking Oil</h3><p>Kitchen essential</p><div class="product-bottom"><strong>Rs. 650</strong><button class="add-btn" data-product="Cooking Oil" data-price="650" aria-label="Add Cooking Oil">+</button></div></div>
+        </article>
+        <article class="product-card reveal" data-category="beverages" data-name="fruit juice">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=600&q=80" alt="Fruit juice" loading="lazy"><span>BEVERAGES</span></div>
+          <div class="product-info"><h3>Fruit Juice</h3><p>Refreshing drinks</p><div class="product-bottom"><strong>Rs. 220</strong><button class="add-btn" data-product="Fruit Juice" data-price="220" aria-label="Add Fruit Juice">+</button></div></div>
+        </article>
+        <article class="product-card reveal" data-category="beverages" data-name="tea selection">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80" alt="Tea in a cup" loading="lazy"><span>BEVERAGES</span></div>
+          <div class="product-info"><h3>Tea Selection</h3><p>Everyday tea time</p><div class="product-bottom"><strong>Rs. 380</strong><button class="add-btn" data-product="Tea Selection" data-price="380" aria-label="Add Tea Selection">+</button></div></div>
+        </article>
+        <article class="product-card reveal" data-category="personal" data-name="body care">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80" alt="Personal care products" loading="lazy"><span>PERSONAL CARE</span></div>
+          <div class="product-info"><h3>Body Care</h3><p>Personal care essentials</p><div class="product-bottom"><strong>Rs. 520</strong><button class="add-btn" data-product="Body Care" data-price="520" aria-label="Add Body Care">+</button></div></div>
+        </article>
+        <article class="product-card reveal" data-category="personal" data-name="bath soap">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&w=600&q=80" alt="Bath soap" loading="lazy"><span>PERSONAL CARE</span></div>
+          <div class="product-info"><h3>Bath Soap</h3><p>Daily hygiene</p><div class="product-bottom"><strong>Rs. 180</strong><button class="add-btn" data-product="Bath Soap" data-price="180" aria-label="Add Bath Soap">+</button></div></div>
+        </article>
+        <article class="product-card reveal" data-category="cleaning" data-name="dishwashing liquid">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80" alt="Cleaning supplies" loading="lazy"><span>CLEANING</span></div>
+          <div class="product-info"><h3>Dishwashing Liquid</h3><p>Kitchen cleaning</p><div class="product-bottom"><strong>Rs. 300</strong><button class="add-btn" data-product="Dishwashing Liquid" data-price="300" aria-label="Add Dishwashing Liquid">+</button></div></div>
+        </article>
+        <article class="product-card reveal" data-category="cleaning" data-name="laundry detergent">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?auto=format&fit=crop&w=600&q=80" alt="Laundry products" loading="lazy"><span>CLEANING</span></div>
+          <div class="product-info"><h3>Laundry Supplies</h3><p>Home cleaning</p><div class="product-bottom"><strong>Rs. 480</strong><button class="add-btn" data-product="Laundry Supplies" data-price="480" aria-label="Add Laundry Supplies">+</button></div></div>
+        </article>
+        <article class="product-card reveal" data-category="snacks" data-name="biscuits cookies">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80" alt="Biscuits and cookies" loading="lazy"><span>SNACKS</span></div>
+          <div class="product-info"><h3>Biscuits & Cookies</h3><p>Tea-time treats</p><div class="product-bottom"><strong>Rs. 160</strong><button class="add-btn" data-product="Biscuits & Cookies" data-price="160" aria-label="Add Biscuits and Cookies">+</button></div></div>
+        </article>
+        <article class="product-card reveal" data-category="snacks" data-name="potato chips">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80" alt="Potato chips" loading="lazy"><span>SNACKS</span></div>
+          <div class="product-info"><h3>Crunchy Snacks</h3><p>Quick bites</p><div class="product-bottom"><strong>Rs. 120</strong><button class="add-btn" data-product="Crunchy Snacks" data-price="120" aria-label="Add Crunchy Snacks">+</button></div></div>
+        </article>
+        <article class="product-card reveal" data-category="home" data-name="paper essentials">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1583947581924-860bda6a26df?auto=format&fit=crop&w=600&q=80" alt="Household paper goods" loading="lazy"><span>HOME GOODS</span></div>
+          <div class="product-info"><h3>Paper Essentials</h3><p>Useful home supplies</p><div class="product-bottom"><strong>Rs. 250</strong><button class="add-btn" data-product="Paper Essentials" data-price="250" aria-label="Add Paper Essentials">+</button></div></div>
+        </article>
+        <article class="product-card reveal" data-category="home" data-name="home organizers">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=600&q=80" alt="Organized home essentials" loading="lazy"><span>HOME GOODS</span></div>
+          <div class="product-info"><h3>Home Organizers</h3><p>Everyday organization</p><div class="product-bottom"><strong>Rs. 700</strong><button class="add-btn" data-product="Home Organizers" data-price="700" aria-label="Add Home Organizers">+</button></div></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No products found. Try a different search.</p>
+      <p class="note">Sample products, images, and prices. Update them to match your real inventory.</p>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services-section" id="services">
+      <div class="section-heading reveal">
+        <span class="eyebrow">OUR SERVICES</span>
+        <h2>SHOPPING THAT FITS<br><span>EVERYDAY LIFE.</span></h2>
+        <p>Useful services to make everyday shopping more convenient.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card reveal"><span class="service-icon">🛍️</span><h3>Easy Shopping</h3><p>Explore organized product categories and find daily essentials quickly.</p></article>
+        <article class="service-card reveal"><span class="service-icon">📦</span><h3>Product Enquiries</h3><p>Ask about stock availability, item details, and current pricing.</p></article>
+        <article class="service-card reveal"><span class="service-icon">🤝</span><h3>Customer Support</h3><p>Get assistance with product departments, store visits, and general enquiries.</p></article>
+        <article class="service-card reveal"><span class="service-icon">🏷️</span><h3>Value Bundles</h3><p>Explore sample bundles for grocery, personal care, and household goods.</p></article>
+      </div>
+    </section>
+
+    <!-- PARKING AND SECURITY -->
+    <section class="section facilities-section" id="facilities">
+      <div class="section-heading reveal">
+        <span class="eyebrow">STORE FACILITIES</span>
+        <h2>A BETTER VISIT.<br><span>MORE PEACE OF MIND.</span></h2>
+        <p>Find out about store access and visitor assistance.</p>
+      </div>
+      <div class="facility-grid">
+        <article class="facility-card reveal">
+          <div class="facility-icon">P</div>
+          <div><h3>Parking Information</h3><p>Contact our store team for information about available parking, nearby parking options, and access before your visit.</p><a href="#contact">ASK ABOUT PARKING ↗</a></div>
+        </article>
+        <article class="facility-card reveal">
+          <div class="facility-icon">✓</div>
+          <div><h3>Security & Safety</h3><p>Get information about visitor guidance, store safety procedures, and how to contact staff for assistance.</p><a href="#contact">ASK A QUESTION ↗</a></div>
+        </article>
+        <article class="facility-card reveal">
+          <div class="facility-icon">♿</div>
+          <div><h3>Customer Assistance</h3><p>Ask our team about store access, shopping support, and facilities available at your branch.</p><a href="#contact">CONTACT THE STORE ↗</a></div>
+        </article>
+      </div>
+      <p class="note">Update these details to reflect the real parking, security, and accessibility facilities at your store.</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="about-image reveal">
+        <img src="https://www.tiktok.com/@gujranwala711/video/7462577685395557639" alt="Shelves with grocery products" loading="lazy">
+        <div class="image-label"><strong>HR STORE</strong><span>EVERYDAY GOODS. SIMPLE SHOPPING.</span></div>
+      </div>
+      <div class="about-copy reveal">
+        <span class="eyebrow">ABOUT OUR STORE</span>
+        <h2>EVERYDAY SHOPPING.<br><span>MADE SIMPLE.</span></h2>
+        <p>HR STORE is an everyday-goods store concept built around convenience, organized departments, and a welcoming customer experience.</p>
+        <p>From groceries and drinks to cleaning products and home essentials, our goal is to help shoppers explore the products they need in one place.</p>
+        <div class="about-points">
+          <div>✓ <span>Six easy-to-explore departments</span></div>
+          <div>✓ <span>Everyday product categories</span></div>
+          <div>✓ <span>Helpful customer service</span></div>
+          <div>✓ <span>Clear product and pricing information</span></div>
+        </div>
+        <a href="#contact" class="btn btn-primary">CONTACT HR STORE ↗</a>
+      </div>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section class="section feedback-section" id="feedback">
+      <div class="section-heading reveal">
+        <span class="eyebrow">YOUR FEEDBACK MATTERS</span>
+        <h2>HELP US GET <span>BETTER.</span></h2>
+        <p>Tell us about your experience and share ideas for improvement.</p>
+      </div>
+      <div class="feedback-layout">
+        <div class="feedback-copy reveal">
+          <div class="quote-mark">“</div>
+          <h3>YOUR EXPERIENCE HELPS SHAPE OUR SERVICE.</h3>
+          <p>Let us know what you think about our product selection, shopping experience, or store facilities.</p>
+        </div>
+        <form id="feedbackForm" class="form-card reveal">
+          <label>Your name<input name="name" required placeholder="Enter your name"></label>
+          <label>Rating
+            <select name="rating" required>
+              <option value="">Choose your rating</option>
+              <option value="5">★★★★★ Excellent</option>
+              <option value="4">★★★★ Very good</option>
+              <option value="3">★★★ Good</option>
+              <option value="2">★★ Needs improvement</option>
+              <option value="1">★ Poor</option>
+            </select>
+          </label>
+          <label>Comments<textarea name="feedback" rows="4" required placeholder="Share your feedback..."></textarea></label>
+          <button type="submit" class="btn btn-primary">SUBMIT FEEDBACK ↗</button>
+          <p class="form-status" id="feedbackStatus" role="status"></p>
+          <p class="form-note">Frontend demo: feedback is not stored on a server.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section pricing-section" id="pricing">
+      <div class="section-heading reveal">
+        <span class="eyebrow">SAMPLE SHOPPING BUNDLES</span>
+        <h2>EVERYDAY VALUE.<br><span>YOUR WAY.</span></h2>
+        <p>Example bundles to demonstrate how HR STORE can present product packages.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <div class="bundle-icon">🧺</div><span class="plan-label">DAILY ESSENTIALS</span><h3>Starter Basket</h3>
+          <p>A sample selection for regular household shopping.</p>
+          <div class="price">Rs. 1,500 <small>/ example</small></div>
+          <ul><li>✓ Selected pantry goods</li><li>✓ Everyday snacks</li><li>✓ Household basics</li></ul>
+          <button class="btn btn-outline bundle-btn" data-bundle="Starter Basket">ENQUIRE NOW</button>
+        </article>
+        <article class="price-card featured reveal">
+          <span class="popular-tag">FAMILY PICK</span><div class="bundle-icon">🛒</div><span class="plan-label">FAMILY SHOPPING</span><h3>Family Basket</h3>
+          <p>A sample basket for a family's weekly needs.</p>
+          <div class="price">Rs. 3,500 <small>/ example</small></div>
+          <ul><li>✓ Grocery essentials</li><li>✓ Drinks and snacks</li><li>✓ Personal care items</li></ul>
+          <button class="btn btn-primary bundle-btn" data-bundle="Family Basket">ENQUIRE NOW ↗</button>
+        </article>
+        <article class="price-card reveal">
+          <div class="bundle-icon">🏠</div><span class="plan-label">HOME CARE</span><h3>Home Basket</h3>
+          <p>A sample selection for home cleaning and upkeep.</p>
+          <div class="price">Rs. 2,500 <small>/ example</small></div>
+          <ul><li>✓ Cleaning products</li><li>✓ Paper essentials</li><li>✓ Home organization items</li></ul>
+          <button class="btn btn-outline bundle-btn" data-bundle="Home Basket">ENQUIRE NOW</button>
+        </article>
+      </div>
+      <p class="note">All bundle prices are illustrative examples, not confirmed offers or actual store prices.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-copy reveal">
+        <span class="eyebrow">CONTACT US</span>
+        <h2>LET'S TALK ABOUT<br><span>YOUR NEEDS.</span></h2>
+        <p>Have a question about a product, pricing, parking, or store services? Send an enquiry using the form.</p>
+        <div class="contact-detail"><span>✉</span><div><small>EMAIL</small><p>hello@hrstore.example</p></div></div>
+        <div class="contact-detail"><span>☎</span><div><small>PHONE</small><p>Add your actual store phone number</p></div></div>
+        <div class="contact-detail"><span>⌖</span><div><small>LOCATION</small><p>Add your actual store address</p></div></div>
+        <div class="contact-detail"><span>◷</span><div><small>OPENING HOURS</small><p>Add your store's business hours</p></div></div>
+      </div>
+      <form id="contactForm" class="contact-form reveal">
+        <h3>Send an Enquiry</h3>
+        <p>Complete the fields below and tell us how we can help.</p>
+        <div class="form-row">
+          <label>Full name<input name="name" required placeholder="Your name"></label>
+          <label>Email address<input type="email" name="email" required placeholder="you@example.com"></label>
+        </div>
+        <label>Subject
+          <select name="subject" id="contactSubject" required>
+            <option value="">Choose a subject</option>
+            <option>Product availability</option>
+            <option>Pricing and bundles</option>
+            <option>Parking information</option>
+            <option>Security and facilities</option>
+            <option>Customer service</option>
+            <option>General enquiry</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" rows="4" required placeholder="Write your message..."></textarea></label>
+        <button class="btn btn-primary" type="submit">SEND ENQUIRY ↗</button>
+        <p class="form-status" id="contactStatus" role="status"></p>
+        <p class="form-note">Demo form: connect a backend or form service to receive messages.</p>
+      </form>
+    </section>
+
+    <!-- BACK TO HOME, JUST ABOVE FOOTER -->
+    <section class="back-home-section" aria-label="Return to home">
+      <div class="back-home-copy">
+        <span class="eyebrow">THANK YOU FOR VISITING HR STORE</span>
+        <h2>EVERYDAY ESSENTIALS.<br><span>ALWAYS WITH YOU.</span></h2>
+        <p>Ready to explore the store again? Return to the top with one click.</p>
+      </div>
+      <a href="#home" class="back-home-btn" id="backHomeButton">
+        <span class="back-home-arrow">↑</span>
+        <span>BACK TO HOME<small>RETURN TO THE TOP</small></span>
+      </a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a class="logo footer-logo" href="#home">
+      <span class="logo-mark">HR</span>
+      <span>HR <strong>STORE</strong><small>EVERYDAY ESSENTIALS</small></span>
+    </a>
+    <p>EVERYDAY GOODS. EVERYDAY CONVENIENCE.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a><a href="#categories">Products</a>
+      <a href="#services">Services</a><a href="#facilities">Facilities</a>
+      <a href="#about">About</a><a href="#contact">Contact</a>
+    </div>
+    <div class="footer-bottom">
+      <small>© <span id="year"></span> HR STORE. ALL RIGHTS RESERVED.</small>
+      <a href="#home" class="footer-top-link">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-heading">
+      <div><span class="eyebrow">YOUR SELECTION</span><h3>Shopping Cart</h3></div>
+      <button id="closeCart" type="button" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items"><p class="cart-empty">Your cart is empty. Explore our products to get started.</p></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Estimated total</span><strong id="cartTotal">Rs. 0</strong></div>
+      <button type="button" id="checkoutButton" class="btn btn-primary">ENQUIRE ABOUT ITEMS ↗</button>
+      <p class="form-note">Demo cart only. No payment is collected.</p>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
